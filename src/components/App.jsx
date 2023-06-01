@@ -46,7 +46,7 @@ export const App = () => {
   
   const onDelete = (id) => { 
     const actualList = contacts.filter(contact => contact.id !== id);
-    return actualList;
+    setContacts(actualList) ;
   }
 
   const filterList = () => { 
